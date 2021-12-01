@@ -1,4 +1,4 @@
-f = open("day1/input")
+f = open("data/day1")
 nums = [int(line) for line in f.readlines()]
 f.close()
 

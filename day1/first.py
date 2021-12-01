@@ -1,4 +1,4 @@
-f = open("input")
+f = open("data/day1")
 prev = int(f.readline())
 total_increase = 0
 
