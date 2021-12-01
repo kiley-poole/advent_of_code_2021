@@ -7,4 +7,5 @@ for line in f:
         total_increase += 1
     prev = int(line)
 
+f.close()
 print(total_increase)

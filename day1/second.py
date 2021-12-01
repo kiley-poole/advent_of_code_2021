@@ -1,10 +1,8 @@
 f = open("day1/input")
+nums = [int(line) for line in f.readlines()]
+f.close()
 
-nums = []
 total_increase = 0
-
-for line in f:
-    nums.append(int(line))
 
 first_start = 0
 second_end =  3
