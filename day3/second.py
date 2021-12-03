@@ -44,9 +44,7 @@ def calcOxygenGenRating(numbers):
         if ones + zeroes == 1:
             break
         cullOxyNumbers(numbers, ones, zeroes, i)
-    for n in numbers:
-        if numbers[n] == True:
-            return n
+    return next((num for num, val in numbers.items() if val == True), None)
 
 def calcScrubberRating(numbers):
     for i in reversed(range(12)):
@@ -54,9 +52,7 @@ def calcScrubberRating(numbers):
         if ones + zeroes == 1:
             break
         cullCO2Numbers(numbers, ones, zeroes, i)
-    for n in numbers:
-        if numbers[n] == True:
-            return n
+    return next((num for num, val in numbers.items() if val == True), None)
 
 def determineNumberFrequency(numbers, bitPos):
     ones = 0
